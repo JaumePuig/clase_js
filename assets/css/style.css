@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:rgb(0, 7, 104);
+}
+
+.hero {
+  background-image: url("https://images6.alphacoders.com/535/535496.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  color: white;
+}
+
+/* Capa oscura encima de la imagen */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Para que el contenido quede por encima del overlay */
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* SERVICES SECTION */
+
+.services-section{
+  background-color: #0b1d3a;
+}
+
+/* Cards */
+
+.service-card{
+  overflow: hidden;
+}
+
+.service-card-large{
+  max-width: 600px;
+}
+
+/* Images */
+
+.service-img{
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.service-img-large{
+  height: 350px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.contact-section{
+  background-color: #0b1d3a;
+}
+
+.contact-info p{
+  margin-bottom: 20px;
+}
+
+.contact-section .form-control{
+  border-radius: 6px;
+}
+.footer-section{
+  background-color: #08162e;
+}
+
+.footer-menu .nav-link{
+  font-weight: 500;
+}
+
+.footer-menu .nav-link:hover{
+  text-decoration: underline;
+}
